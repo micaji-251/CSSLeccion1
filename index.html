@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lección 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: bolder; font-size:3em">CSS Lección 1</h1>
+        <p>En este apartado se vera:</p>
+        <nav>
+            <ol>
+                <li><a href="#">Maneras de vincular HTML con Css</a></li>
+                <li><a href="#">Conjunto de reglas de Css</a></li>
+                <li><a href="#">Conceptos importantes de Css</a></li>
+            </ol>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Maneras de vincular HTML con Css</h2>
+            <p> Hay 3 maneras:</p>
+
+            
+            <ol>
+                <li> Utilizando la etiqueta: <"style> h{color:black} <"/style"> </li>
+                
+                <style>
+                    h2{
+                        color: grey;
+                    }
+                </style>
+            
+                
+                <li> Colocando el estilo inline <"h1 style="font-weight: bolder; font-size:3em">CSS Lección 1<"/h1></li>
+                <li> Creando una hoja externa, para esto se debe vincular utilizando:
+                    <p>
+                        Esto se coloca en el head del html
+                        <"link rel="stylesheet" href="./styles.css">
+                    </p>
+                    <p>
+                        Se crea el archivo style.css, donde se coloca h1{color:black}
+                    </p>
+                </li>
+            </ol>
+
+        </article>
+
+        <article>
+            <h2>Conjunto de reglas de CSS</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Elemento</th>
+                        <th>Definicion</th>
+                </thead>
+                <tbody>
+                    </tr>
+                    <tr>
+                        <th>Selector</th>
+                        <th> Manera de nombrar a los elementos de html para poder estilizarlos</th>
+                    </tr>
+
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Es el atributo estilistico de cada elemento</th>
+                    </tr>
+
+                    <tr>
+                        <th>Valor</th>
+                        <th>Estilo que tendra la propiedad</th>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </article>
+
+        <article>
+            <h2>Conceptos Importantes de CSS</h2>
+
+            <ul>
+                <li>Selectores:
+                    <p>Los selectores son los elementos de HTML, estos son los h de encabezados, tables, img, p, entre otros</p>
+                </li>
+                <li>Herencia:
+                    <p>La herencia es un pilar de CSS que indica que si a un elemento que agrupa varios otros, se le pone un estilo, sus hijos tendran el mismo estilo, no siempre se cumple en caso el estilo no sea heredable</p>
+                </li>
+                <li>Cascada:
+                    <p>Para aplicación de estilos en los que estos sean de la misma prioridad de aplicación, se eligira el que se haya puesto ultimo en el codigo</p>
+                </li>
+
+                <li>Especificidad:
+                    <p>Cada tipo de selector tiene una prioridad, el de mayor numero es el más prioritario</p>
+                    <table>
+
+                        <tr>
+                        <th>Etiqueta </th>
+                        <th> Clases</th>
+                        <th> id</th>
+                        <th> inline</th>
+                        <th>!important </th>
+                        </tr>
+                        
+                        <tr>
+                        <th>1 </th>
+                        <th> 10</th>
+                        <th> 100</th>
+                        <th> 1000</th>
+                        <th>infinito </th>
+                        </tr>
+                        
+                        
+                        </table>
+                </li>
+            </ul>
+
+        </article>
+    </main>
+
+
+</body>
+</html>

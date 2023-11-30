@@ -1,0 +1,10 @@
+table{
+    padding: 2%;
+    
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+}
+
+th, tr{
+    border: 1px solid;
+}
